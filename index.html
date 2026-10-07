@@ -1,64 +1,736 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sample Prog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link href="./assets/css/style.css" rel="stylesheet">
-  </head>
-  <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/img/LogoNav.png" alt="Logo">
-        </a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test sample</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="./assets/css/style.css" rel="stylesheet">
+</head>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link " href="">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Blogs</a></li>
-            <li class="nav-item ms-lg-2">
-              <a class="contact-btn" href="">Contact Us</a>
-            </li>
-          </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar position-absolute top-0 start-0 w-100 z-3 py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/LogoNav.png" alt="Logo" class="site-logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="btn btn-light-site" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero position-relative d-flex align-items-center">
+    <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+    <div class="container position-relative z-2">
+      <div class="row">
+        <div class="col-12 col-md-8 col-lg-5">
+          <h1 class="text-on-dark mb-3">Lorem Ipsum Dolor</h1>
+          <p class="text-on-dark-muted mb-4">
+            Lorem ipsum dolor sit amet consectetur. Tortor nulla vitae velit amet faucibus at mi.
+            Quis viverra in facilisis vitae risus elementum. Tempus egestas feugiat imperdiet
+            pellentesque porttitor phasellus ut fermentum. Tempor mauris augue duis ultrices.
+          </p>
+          <a class="btn btn-light-site" href="#">Learn More</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </header>
 
-    <header class="hero" style="background-image: url('./assets/img/Banner.png');">
-      <div class="hero-overlay"></div>
+  <!-- Project Section -->
 
-      <div class="hero-content">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6">
-              <div class="hero-text">
-                <h1>Lorem Ipsum Dolor</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur.
-                  Tortor nulla vitae velit amet faucibus at mi.
-                  Quis viverra in facilisis vitae risus elementum.
-                  Tempus egestas feugiat imperdiet pellentesque
-                  porttitor phasellus ut fermentum.
-                  Tempor mauris augue duis ultrices.
-                </p>
-                <a class="learn-btn" href="">Learn More</a>
+  <section id="projects" class="section">
+    <div class="container-xl">
+
+      <div class="row align-items-end gy-3 mb-5">
+        <div class="col-12 col-lg-5">
+          <h2 class="mb-3">Lorem Ipsum Dolor</h2>
+          <p class="text-body-sm text-muted-site mb-0">
+            Lorem ipsum dolor sit amet consectetur. Tortor nulla vitae velit amet faucibus at mi.
+            Quis viverra in facilisis vitae risus elementum. Tempus egestas feugiat imperdiet
+            pellentesque porttitor phasellus ut fermentum. Tempor mauris augue adipiscing duis ultrices.
+          </p>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="d-flex justify-content-start justify-content-lg-end gap-2">
+            <button type="button" class="btn btn-site btn-icon" aria-label="Previous">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button type="button" class="btn btn-site btn-icon" aria-label="Next">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card project-card h-100">
+            <img src="./assets/img/House1.png" alt="Project One" class="card-img-top project-image">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="text-price mb-2">1,000,000</div>
+              <h3 class="mb-2">Lorem Ipsum Dolor</h3>
+              <p class="text-body-sm text-muted-site mb-3">Lorem ipsum dolor sit amet consectetur augue consequat.</p>
+
+              <div class="row g-0 project-details mt-auto">
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-site w-100 mt-3">View</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card project-card h-100">
+            <img src="./assets/img/House2.png" alt="Project Two" class="card-img-top project-image">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="text-price mb-2">1,000,000</div>
+              <h3 class="mb-2">Lorem Ipsum Dolor</h3>
+              <p class="text-body-sm text-muted-site mb-3">Lorem ipsum dolor sit amet consectetur augue consequat.</p>
+
+              <div class="row g-0 project-details mt-auto">
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-site w-100 mt-3">View</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card project-card h-100">
+            <img src="./assets/img/House3.png" alt="Project Three" class="card-img-top project-image">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="text-price mb-2">1,000,000</div>
+              <h3 class="mb-2">Lorem Ipsum Dolor</h3>
+              <p class="text-body-sm text-muted-site mb-3">Lorem ipsum dolor sit amet consectetur augue consequat.</p>
+
+              <div class="row g-0 project-details mt-auto">
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+                <div class="col-4 project-detail">
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                    <span class="text-stat">5</span>
+                  </div>
+                  <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-site w-100 mt-3">View</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-site px-4">Lorem Ipsum</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- services section -->
+
+  <section id="services" class="services-section py-5">
+
+    <div class="container-xl">
+
+      <div class="row justify-content-center text-center mb-4">
+
+        <div class="col-12 col-md-8 col-lg-6">
+
+          <h2 class="mb-2">
+            Lorem Ipsum Dolor
+          </h2>
+
+          <p class="text-body-sm text-muted-site mb-0">
+            Lorem ipsum dolor sit amet consectetur. Tortor nulla vitae velit amet
+            faucibus at mi. Quis viverra in facilisis vitae risus elementum.
+            Tempus egestas feugiat imperdiet pellentesque porttitor phasellus ut
+            fermentum. Tempor mauris augue adipiscing duis ultrices.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="row g-3">
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+          <article class="service-card h-100">
+
+            <img src="./assets/img/blueprint 1.png" alt="" class="service-icon">
+
+            <h3 class="mb-2">
+              Lorem Ipsum
+            </h3>
+
+            <p class="text-body-sm text-muted-site mb-0">
+              Lorem ipsum dolor sit amet consectetur.
+              Amet eget augue porta in pretium
+              adipiscing aliquam mauris non. Consequat
+              eget id morbi montes.
+            </p>
+
+          </article>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+          <article class="service-card h-100">
+
+            <img src="./assets/img/blueprint 1.png" alt="" class="service-icon">
+
+            <h3 class="mb-2">
+              Lorem Ipsum
+            </h3>
+
+            <p class="text-body-sm text-muted-site mb-0">
+              Lorem ipsum dolor sit amet consectetur.
+              Amet eget augue porta in pretium
+              adipiscing aliquam mauris non. Consequat
+              eget id morbi montes.
+            </p>
+
+          </article>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+          <article class="service-card h-100">
+
+            <img src="./assets/img/blueprint 1.png" alt="" class="service-icon">
+
+            <h3 class="mb-2">
+              Lorem Ipsum
+            </h3>
+
+            <p class="text-body-sm text-muted-site mb-0">
+              Lorem ipsum dolor sit amet consectetur.
+              Amet eget augue porta in pretium
+              adipiscing aliquam mauris non. Consequat
+              eget id morbi montes.
+            </p>
+
+          </article>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+          <article class="service-card h-100">
+
+            <img src="./assets/img/blueprint 1.png" alt="" class="service-icon">
+
+            <h3 class="mb-2">
+              Lorem Ipsum
+            </h3>
+
+            <p class="text-body-sm text-muted-site mb-0">
+              Lorem ipsum dolor sit amet consectetur.
+              Amet eget augue porta in pretium
+              adipiscing aliquam mauris non. Consequat
+              eget id morbi montes.
+            </p>
+
+          </article>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- about section -->
+
+  <section id="about" class="about-section">
+    <div class="container-xl">
+      <div class="row justify-content-center align-items-center gy-5">
+
+        <div class="col-12 col-lg-6">
+          <div class="about-media">
+            <img src="./assets/img/4thsection.png" alt="About Us" class="about-image">
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5 ps-lg-5">
+          <div class="about-content">
+            <h2 class="mb-3">Lorem Ipsum Dolor</h2>
+            <p class="text-body-sm text-muted-site mb-4">
+              Lorem ipsum dolor sit amet consectetur. Tortor nulla vitae velit amet faucibus at mi.
+              Quis viverra in facilisis vitae risus elementum. Tempus egestas feugiat imperdiet
+              pellentesque porttitor phasellus ut fermentum. Tempor mauris augue adipiscing duis ultrices.
+            </p>
+
+            <div class="row g-0 about-details">
+              <div class="col-4 project-detail">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                  <span class="text-stat">5</span>
+                </div>
+                <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+              </div>
+              <div class="col-4 project-detail">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                  <span class="text-stat">5</span>
+                </div>
+                <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+              </div>
+              <div class="col-4 project-detail">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="./assets/img/blueprint 1.png" alt="" class="detail-icon">
+                  <span class="text-stat">5</span>
+                </div>
+                <small class="text-caption text-muted-site">Lorem ipsum dolor</small>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-site mt-4">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="about-review mt-5 position-relative">
+
+      <img src="./assets/img/5thsection.png" alt="About Us"
+        class="about-review-bg position-absolute top-0 start-0 w-100 h-100">
+
+      <div class="container-xl position-relative">
+
+        <div class="row align-items-center py-5">
+
+          <div class="col-12 col-md-7 col-lg-6">
+
+            <h2 class="mb-4">
+              Lorem ipsum dolor sit amet<br class="d-none d-lg-block">
+              consectetur.
+            </h2>
+            <div class="d-flex align-items-center gap-2 mb-4">
+
+              <strong>
+                Excellent
+              </strong>
+
+              <div class="text-primary d-flex gap-1">
+
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+
+              </div>
+
+            </div>
+
+            <p class="text-body-sm text-muted-site mb-0">
+              Lorem ipsum dolor sit amet consectetur.
+              Tortor nulla vitae velit amet faucibus at mi.
+              Quis viverra in facilisis vitae risus elementum.
+              Tempus egestas feugiat imperdiet pellentesque
+              porttitor phasellus ut fermentum.
+              Tempor mauris augue adipiscing duis ultrices.
+            </p>
+
+            <div class="d-flex align-items-center mt-5">
+
+              <img src="./assets/img/Client.png" alt="Client" class="about-client-img">
+
+              <div class="ms-3">
+
+                <strong class="d-block">
+                  Lorem ipsum dolor sit
+                </strong>
+
+                <small class="d-block mt-1 text-caption text-muted-site opacity-50">
+                  Lorem ipsum dolor sit
+                </small>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+  <!-- Blogs Section -->
+
+  <section id="blogs" class="py-5">
+
+    <div class="container-xl">
+
+      <div class="row justify-content-center text-center mb-5">
+
+        <div class="col-12 col-md-8 col-lg-6">
+
+          <h2 class="mb-2">
+            Lorem Ipsum Dolor
+          </h2>
+
+          <p class="text-body-sm text-muted-site mb-0">
+            Lorem ipsum dolor sit amet consectetur. Tortor nulla vitae velit amet faucibus at mi.
+            Quis viverra in facilisis vitae risus elementum.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <article class="card h-100 border-0 shadow-sm">
+
+            <img src="./assets/img/blogs.png" alt="Blog One" class="card-img-top w-100"
+              style="aspect-ratio: 490 / 300; object-fit: cover;">
+
+            <div class="card-body d-flex flex-column p-4">
+
+              <h3 class="mb-1">
+                Lorem Ipsum Dolor
+              </h3>
+
+              <small class="text-caption text-muted-site mb-4">
+                9/21/23
+              </small>
+
+              <p class="text-body-sm text-muted-site mb-4">
+                Lorem ipsum dolor sit amet consectetur. Facilisis dignissim id libero aliquam.
+                Etiam mi a gravida mi dictumst placerat vitae. Faucibus egestas dictum magnis
+                urna diam nisl lobortis ornare.
+              </p>
+
+              <a href="#" class="btn btn-site w-100 mt-auto">
+                Read More
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <article class="card h-100 border-0 shadow-sm">
+
+            <img src="./assets/img/blogs.png" alt="Blog Two" class="card-img-top w-100"
+              style="aspect-ratio: 490 / 300; object-fit: cover;">
+
+            <div class="card-body d-flex flex-column p-4">
+
+              <h3 class="mb-1">
+                Lorem Ipsum Dolor
+              </h3>
+
+              <small class="text-caption text-muted-site mb-4">
+                9/21/23
+              </small>
+
+              <p class="text-body-sm text-muted-site mb-4">
+                Lorem ipsum dolor sit amet consectetur. Facilisis dignissim id libero aliquam.
+                Etiam mi a gravida mi dictumst placerat vitae. Faucibus egestas dictum magnis
+                urna diam nisl lobortis ornare.
+              </p>
+
+              <a href="#" class="btn btn-site w-100 mt-auto">
+                Read More
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+
+          <article class="card h-100 border-0 shadow-sm">
+
+            <img src="./assets/img/blogs.png" alt="Blog Three" class="card-img-top w-100"
+              style="aspect-ratio: 490 / 300; object-fit: cover;">
+
+            <div class="card-body d-flex flex-column p-4">
+
+              <h3 class="mb-1">
+                Lorem Ipsum Dolor
+              </h3>
+
+              <small class="text-caption text-muted-site mb-4">
+                9/21/23
+              </small>
+
+              <p class="text-body-sm text-muted-site mb-4">
+                Lorem ipsum dolor sit amet consectetur. Facilisis dignissim id libero aliquam.
+                Etiam mi a gravida mi dictumst placerat vitae. Faucibus egestas dictum magnis
+                urna diam nisl lobortis ornare.
+              </p>
+
+              <a href="#" class="btn btn-site w-100 mt-auto">
+                Read More
+              </a>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+      <div class="text-center mt-5">
+
+        <a href="#" class="btn btn-site px-4">
+          View
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- 
+Footer Section -->
+  <section id="contact" class="contact-section"
+    style="background: url('./assets/img/contactus.png') center / cover no-repeat;">
+    <div class="container-xl">
+      <div class="row align-items-center gy-5">
+
+        <div class="col-12 col-lg-6" data-aos="fade-right">
+          <div class="contact-info mx-auto ms-lg-0">
+            <h2 class="mb-3">Lorem Ipsum Dolor</h2>
+            <p class="text-body-sm text-muted-site mb-4">
+              Lorem ipsum dolor sit amet consectetur. Tortor nulla vitae velit amet faucibus at mi.
+              Quis viverra in facilisis vitae risus elementum. Tempus egestas feugiat imperdiet
+              pellentesque porttitor phasellus ut fermentum. Tempor mauris augue adipiscing duis ultrices.
+            </p>
+
+            <ul class="list-unstyled contact-list mb-0">
+              <li class="d-flex gap-3">
+                <i class="bi bi-geo-alt-fill contact-list-icon"></i>
+                <div>
+                  <h3 class="contact-list-title">Address</h3>
+                  <p class="text-body-sm text-muted-site mb-0">
+                    Lorem ipsum dolor sit amet consectetur. At dignissim phasellus dolor nisi.
+                    Amet quam vulputate in malesuada curabitur ac.
+                  </p>
+                </div>
+              </li>
+              <li class="d-flex gap-3">
+                <i class="bi bi-telephone-fill contact-list-icon"></i>
+                <div>
+                  <h3 class="contact-list-title">Phone</h3>
+                  <p class="text-body-sm text-muted-site mb-0">123-456-789</p>
+                </div>
+              </li>
+              <li class="d-flex gap-3">
+                <i class="bi bi-envelope-fill contact-list-icon"></i>
+                <div>
+                  <h3 class="contact-list-title">Email</h3>
+                  <p class="text-body-sm text-muted-site mb-0">lorem@gmail.com</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-delay="150">
+          <div class="contact-card-wrap mx-auto me-lg-0">
+            <form class="contact-card" action="#" method="post">
+              <div class="row g-2 mb-3">
+                <div class="col-6">
+                  <input type="text" class="form-control form-control-site" placeholder="First Name"
+                    aria-label="First Name" required>
+                </div>
+                <div class="col-6">
+                  <input type="text" class="form-control form-control-site" placeholder="Last Name"
+                    aria-label="Last Name" required>
+                </div>
+              </div>
+
+              <div class="row g-2 mb-3">
+                <div class="col-6">
+                  <input type="tel" class="form-control form-control-site" placeholder="Mobile Number"
+                    aria-label="Mobile Number">
+                </div>
+                <div class="col-6">
+                  <input type="email" class="form-control form-control-site" placeholder="Email" aria-label="Email"
+                    required>
+                </div>
+              </div>
+
+              <select class="form-select form-control-site mb-3" aria-label="Subject" required>
+                <option value="" selected disabled>Subject</option>
+                <option>General Inquiry</option>
+                <option>Projects</option>
+                <option>Services</option>
+              </select>
+
+              <textarea class="form-control form-control-site mb-3" rows="6" placeholder="Message" aria-label="Message"
+                required></textarea>
+
+              <button type="submit" class="btn btn-light-site w-100 btn-submit">Submit</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container-xl footer-main">
+      <div class="row gy-5">
+
+        <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+          <img src="./assets/img/LogoFooter.png" alt="Logo" class="footer-logo mb-3">
+          <p class="footer-text mb-3">
+            Lorem ipsum dolor sit amet consectetur. Volutpat ante diam cursus fermentum congue ante.
+          </p>
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-social" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="footer-social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="footer-social" aria-label="RSS"><i class="bi bi-rss-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="list-unstyled footer-links mb-0">
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Lorem</a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-9 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <h4 class="footer-title">Subscribe to our news</h4>
+          <form class="d-flex gap-2 mb-4 footer-subscribe" action="#" method="post">
+            <input type="email" class="form-control form-control-site" placeholder="Email" aria-label="Email">
+            <button type="submit" class="btn btn-light-site btn-submit">Submit</button>
+          </form>
+
+          <h4 class="footer-title">Keep In Touch</h4>
+          <ul class="list-unstyled mb-0 footer-contact">
+            <li class="d-flex gap-3">
+              <i class="bi bi-telephone-fill"></i>
+              <div><strong class="d-block">Phone</strong><span>123-456-789</span></div>
+            </li>
+            <li class="d-flex gap-3">
+              <i class="bi bi-envelope-fill"></i>
+              <div><strong class="d-block">Email</strong><span>lorem@gmail.com</span></div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center">
+      <div class="container-xl">
+        Copyright &copy; 2023 Lorem. SEO by SEO-HACKER. Optimized and Maintained by Sean Si
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>
